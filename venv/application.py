@@ -16,7 +16,6 @@ def original():
          return render_template('index.html', pred_class= pred_class)
     return render_template('index.html')
 
-
 def classifyImage(path):
  img = open_image(path)
  pred_class, pred_idx, output = learn.predict(img)
